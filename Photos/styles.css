@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    position: sticky;
+    background-color: #fff;
+    justify-content: center;
+}
+
+nav .onglets {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+nav .onglets a {
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    color: #000;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    padding-inline: 4px;
+    font-size: 16px;
+}
+
+nav .onglets a.ct:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.6px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav .onglets a.ct:hover:after {
+    width: 100%; 
+    left: 0;
+}
+nav .onglets a.ct:hover {
+    color: #DBB581;
+    transition: 0.20s;
+}
+
+nav .onglets button.reservation  {
+    padding: 5px 10px;
+    background-color: #DBB581;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+nav .onglets button.reservation:hover {
+    background-color: #E7D0B0;
+    transition: 0.20s;  
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://i.ibb.co/4d8CYtM/background-header.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+
+header h1 {
+    font-family: 'Tiro Kannada', serif;
+    font-size: 40px;
+}
+
+header h4 {
+    margin-top: -20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.main {
+    margin: 20px;
+    margin-top: 4s0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1 {
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 2px solid #000;
+    width: 12%;
+    padding-bottom: 3px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards .card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cards .card img {
+    width: 325px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 100px ;
+}
+
+footer h1 {
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+footer .services {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .service {
+    margin-right: 15px;
+    padding: 10px;
+}
+
+footer .services .service p {
+    max-width: 301px;
+}
+
+footer .services .service a.forl{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+footer .services .service a.forl:hover {
+    color: #DBB581;
+    transition: 0.20s;
+}
+
+footer p.left  {
+    color: rgb(181,181,181);
+    float: left;
+}
+
+footer p.right {
+    color: rgb(181,181,181);
+    float: right;
+}
+
+@media screen and (max-width:680px) {
+    
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .cards .card .img {
+        width: 300px;
+    }
+}
+
